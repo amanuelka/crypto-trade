@@ -1,0 +1,24 @@
+<section id="edit-container">
+    <div class="edit-container-info">
+        <h1>Edit Announcement</h1>
+        <form method="post">
+            <label>Name:</label>
+            <input type="text" id="name" name="name" value="{{name}}">
+            <label>Image:</label>
+            <input type="text" id="image" name="imageUrl" value="{{imageUrl}}">
+            <label>Price:</label>
+            <input type="number" id="price" name="price" value="{{price}}">
+            <label>Description:</label>
+            <textarea id="description" name="description">{{description}}</textarea>
+            <label>Payment method:</label>
+            <select id="payment" name="payment">
+                <option value="{{payment}}" hidden="hidden" selected="selected">{{payment}}</option>
+                <option value="Crypto Wallet">Crypto Wallet</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="PayPal">PayPal</option>
+            </select>
+            <input type="submit" id="btn" value="EDIT"></input>
+        </form>
+    </div>
+</section>
